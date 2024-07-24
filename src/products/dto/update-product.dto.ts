@@ -4,6 +4,6 @@ import { IsNumber, IsPositive } from 'class-validator';
 
 export class UpdateProductDto extends PartialType(CreateProductDto) {
     @IsNumber()
-    @IsPositive()
+    @IsPositive()   
     id: number;
 }
